@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { poppins } from "@/config/fonts";
+import { montserrat } from "@/config/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -13,8 +13,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" suppressHydrationWarning>
-      <body className={`${poppins.className} antialiased`}>{children}</body>
+    <html lang="es" className="scroll-smooth dark" suppressHydrationWarning>
+      <body
+        className={`${montserrat.className} barberia-dark flex min-h-screen flex-col bg-background text-foreground antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
