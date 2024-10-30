@@ -20,6 +20,7 @@ export interface TipoServicio {
   tipo: string;
   precio: number;
   tiempo: number;
+  message: string;
 }
 
 export interface Meta {
