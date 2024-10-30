@@ -9,15 +9,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  modal,
 }: Readonly<{
   children: React.ReactNode;
+  modal: React.ReactNode;
 }>) {
   return (
     <html lang="es" className="scroll-smooth dark" suppressHydrationWarning>
       <body
-        className={`${montserrat.className} barberia-dark flex min-h-screen flex-col bg-background text-foreground antialiased`}
+        className={`${montserrat.className} flex min-h-screen flex-col bg-background text-foreground antialiased barberia-dark`}
       >
         {children}
+        {modal}
       </body>
     </html>
   );
