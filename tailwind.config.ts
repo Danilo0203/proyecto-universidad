@@ -9,7 +9,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/components/(accordion|avatar|badge|button|card|chip|image|link|modal|navbar|radio|divider|ripple|spinner).js"
+    "./node_modules/@nextui-org/theme/dist/components/(accordion|avatar|badge|button|calendar|card|chip|image|link|modal|navbar|radio|divider|ripple|spinner).js",
   ],
   theme: {
     extend: {

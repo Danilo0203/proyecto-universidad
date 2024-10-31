@@ -39,7 +39,11 @@ export const getBarberos = async () => {
             id: usuario.id,
             documentId: usuario.documentId,
             nombres: usuario.nombres,
-            rol: usuario.rol.nombre,
+            rol: {
+              id: usuario.rol.id,
+              documentId: usuario.rol.documentId,
+              nombre: usuario.rol.nombre,
+            },
           },
         };
       },
